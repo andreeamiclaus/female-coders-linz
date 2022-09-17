@@ -40,7 +40,7 @@ function monthlyCosts() {
   alert(
     "You have left " +
       fixedCosts +
-      " euros left for emergency funds and fun funds"
+      " euros left for emergency funds, fun funds and investment funds"
   );
 }
 
