@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Stuff</title>
+   <link rel="stylesheet" href="styles.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/38b17d94e0.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="header">
+            
+    <h1 class="title"> Budget Monthly Planner
+       <i class="fa fa-calendar"></i>
+    </h1>
+    </div>
+   <div class="wrapper">
+    <div class="total-income">
+        <div>
+         <h1>1. Expenses</h1>
+       
+      <h3>Enter monthly income</h3>
+      <form action="">
+        <input type="text"  size="10" id="monthly-income"/>
+        
+      </form>
+      </div>
+      <div>
+        <img src="https://img.freepik.com/premium-photo/3d-cartoon-dollar-money-bag-with-gold-coins-icon-purple-background-3d-rendering-illustration_37129-2602.jpg" alt="" height="200px" width="300px">
+      </div>
+    </div>
+    <div class="expenses">
+         <div class="fixed-costs">
+      <h3>Monthly fixed costs</h3>
+     
+      <form action="">
+        <label for="">Living costs</label>
+        <input
+          type="text"
+          name="Food"
+          size="10"
+          id="living-costs"
+      
+        />
+        <!-- <button class="submit" >Submit</button> -->
+        <label for="">Food</label>
+        <input type="text"   size="10" id="food">
+        <!-- <button class="submit">Submit</button> -->
+        <label for="">Transportation</label>
+        <input type="text"  size="10" id="transportation"/>
+        <!-- <button class="submit">Submit</button> -->
+        <label for="">Pets</label>
+        <input type="text"  size="10" id="pets"/>
+        <!-- <button class="submit">Submit</button> -->
+        <label for="">Others</label>
+          <input type="text"  size="10" id="others">
+          <!-- <button >Submit</button> -->
+      </form>
+      </div>
+      <div class="irregular-costs">
+      <h3>Irregular costs</h3>
+        <label for="">Hobbies</label>
+        <input type="text"  size="10" id="hobbies" />
+          <!-- <button class="submit">Submit</button> -->
+        <label for="">Private needs</label>
+        <input type="text"   size="10" id="private-needs"/>
+          <!-- <button class="submit">Submit</button> -->
+        <label for="">Travel</label>
+        <input type="text"  size="10"  id="travel"/>
+          <!-- <button class="submit">Submit</button> -->
+        <label for="">Others</label>
+         <input type="text"  size="10"  id="others2"/>
+          <!-- <button class="submit">Submit</button> -->
+      </form>
+    </div>
+    </div>
+    <div class="left-budget">
+        <h1>2. Left Budget</h1>
+        <button class="show" onclick="monthlyCosts()">Show left budget</button>
+      
+            
+        
+    </div>
+    <div class="savings">
+        <div>
+        <h1> 3. Emergency Funds</h1>
+
+    <p>70% from Left Fund</p>
+    <button onclick="showEmergencyAmount()" class="show">Show amount</button>
+    </div>
+    <div>
+     <h1> 4. Fun Funds</h1>
+
+     <p> 30% from left budget</p>
+     <button onclick="showFunAmount()" class="show">Show amount</button>
+     </div>
+
+
+    </div>
+    </div>
+    </div>
+  </body>
+</html>

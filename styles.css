@@ -1,0 +1,108 @@
+body{
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #e3bdbf 100%);
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    /* margin:0 40px; */
+    padding-bottom: 40px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* width: 500px;
+    height: 700px;; */
+ 
+}
+
+.wrapper{
+    margin:0 150px;
+  
+}
+.title{
+ text-align: center;
+ font-size: 40px;
+background-image: linear-gradient(to top, #9ba6cf 0%, #c8b1d7 100%);
+color: white;
+}
+
+h1{
+    font-size: 25px;
+    font-style: bold;
+}
+
+
+
+
+.savings{
+    display: flex;
+    flex-direction: row;
+    gap:20%
+}
+
+.total-income{
+    display: flex;
+        flex-direction: row;
+        gap: 40%;
+}
+
+.show{
+
+    
+        
+            align-items: center;
+            background-color: #fee6e3;
+            border: 2px solid #e3bdbf;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color: #111;
+            cursor: pointer;
+            display: flex;
+            font-family: Inter, sans-serif;
+            font-size: 16px;
+            height: 48px;
+            justify-content: center;
+            line-height: 24px;
+            max-width: 100%;
+            padding: 0 25px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+    
+        .show:after {
+            background-color: rgb(205, 162, 214);
+            border-radius: 8px;
+            content: "";
+            display: block;
+            height: 48px;
+            left: 0;
+            width: 100%;
+            position: absolute;
+            top: -2px;
+            transform: translate(8px, 8px);
+            transition: transform .2s ease-out;
+            z-index: -1;
+        }
+    
+        .show:hover:after {
+            transform: translate(0, 0);
+        }
+    
+        .show:active {
+            background-color: #ffdeda;
+            outline: 0;
+        }
+    
+        .show:hover {
+            outline: 0;
+        }
+    
+        @media (min-width: 768px) {
+            .show {
+                padding: 0 40px;
+            }
+        }
+
+
+        
