@@ -34,7 +34,7 @@ h1{
 .savings{
     display: flex;
     flex-direction: row;
-    gap:20%
+    gap:10%
 }
 
 .total-income{
