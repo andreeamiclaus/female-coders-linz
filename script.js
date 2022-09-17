@@ -1,20 +1,3 @@
-function alertIncome() {
-  const income = document.getElementById("monthly-income").value;
-  alert(income);
-}
-
-// const income = document.getElementById("monthly-income").innerHTML;
-
-const livingCosts = document.getElementById("living-costs").value;
-const food = document.getElementById("food").value;
-const transportation = document.getElementById("transportation").value;
-const pets = document.getElementById("pets").value;
-const others = document.getElementById("others").value;
-const hobbies = document.getElementById("hobbies").value;
-const privateNeeda = document.getElementById("private-needs").value;
-const travel = document.getElementById("travel").value;
-const others2 = document.getElementById("others2").value;
-
 function monthlyCosts() {
   const income = document.getElementById("monthly-income").value;
   const livingCosts = document.getElementById("living-costs").value;
@@ -37,90 +20,35 @@ function monthlyCosts() {
     privateNeeds -
     travel -
     others2;
+
+  return fixedCosts;
+}
+
+function leftMoney() {
+  const final = monthlyCosts();
   alert(
     "You have left " +
-      fixedCosts +
+      final +
       " euros left for emergency funds, fun funds and investment funds"
   );
+
+  return final;
 }
 
-function showEmergencyAmount() {
-  const income = document.getElementById("monthly-income").value;
-  const livingCosts = document.getElementById("living-costs").value;
-  const food = document.getElementById("food").value;
-  const transportation = document.getElementById("transportation").value;
-  const pets = document.getElementById("pets").value;
-  const others = document.getElementById("others").value;
-  const hobbies = document.getElementById("hobbies").value;
-  const privateNeeds = document.getElementById("private-needs").value;
-  const travel = document.getElementById("travel").value;
-  const others2 = document.getElementById("others2").value;
-  const fixedCosts =
-    income -
-    livingCosts -
-    food -
-    transportation -
-    pets -
-    others -
-    hobbies -
-    privateNeeds -
-    travel -
-    others2;
+function saveEmergency() {
+  const final2 = (monthlyCosts() / 100) * 50;
 
-  const emergencyFunds = (fixedCosts / 100) * 50;
-  alert("You can save " + emergencyFunds + " euros for black days!");
+  alert("You can spend " + final2 + " euros for black days!");
 }
 
-function showFunAmount() {
-  const income = document.getElementById("monthly-income").value;
-  const livingCosts = document.getElementById("living-costs").value;
-  const food = document.getElementById("food").value;
-  const transportation = document.getElementById("transportation").value;
-  const pets = document.getElementById("pets").value;
-  const others = document.getElementById("others").value;
-  const hobbies = document.getElementById("hobbies").value;
-  const privateNeeds = document.getElementById("private-needs").value;
-  const travel = document.getElementById("travel").value;
-  const others2 = document.getElementById("others2").value;
-  const fixedCosts =
-    income -
-    livingCosts -
-    food -
-    transportation -
-    pets -
-    others -
-    hobbies -
-    privateNeeds -
-    travel -
-    others2;
+function funFund() {
+  const final3 = (monthlyCosts() / 100) * 20;
 
-  const funFunds = (fixedCosts / 100) * 20;
-  alert("You can spend " + funFunds + " euros for fun!");
+  alert("You can spend " + final3 + " euros for fun !");
 }
 
-function showInvestmentAmount() {
-  const income = document.getElementById("monthly-income").value;
-  const livingCosts = document.getElementById("living-costs").value;
-  const food = document.getElementById("food").value;
-  const transportation = document.getElementById("transportation").value;
-  const pets = document.getElementById("pets").value;
-  const others = document.getElementById("others").value;
-  const hobbies = document.getElementById("hobbies").value;
-  const privateNeeds = document.getElementById("private-needs").value;
-  const travel = document.getElementById("travel").value;
-  const others2 = document.getElementById("others2").value;
-  const fixedCosts =
-    income -
-    livingCosts -
-    food -
-    transportation -
-    pets -
-    others -
-    hobbies -
-    privateNeeds -
-    travel -
-    others2;
+function investingFund() {
+  const final4 = (monthlyCosts() / 100) * 30;
 
-  const investmentFunds = (fixedCosts / 100) * 30;
-  alert("You can invest " + investmentFunds + " euros !");
+  alert("You can invest " + final4 + " euros  !");
 }
